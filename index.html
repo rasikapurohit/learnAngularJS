@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="spapp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+
+    <title>Single Page AngularJS application</title>
+</head>
+<body>
+
+    <script type="text/ng-template" id="first.html">
+        <h1>First</h1>
+        <h3>{{message}}</h3>
+    </script>
+    <script type="text/ng-template" id="second.html">
+        <h1>Second</h1>
+        <h3>{{message}}</h3>
+    </script>
+    <script type="text/ng-template" id="third.html">
+        <h1>Third</h1>
+        <h3>{{message}}</h3>
+    </script>
+
+    <a href="#/">First</a>
+    <a href="#/second">Second</a>
+    <a href="#/third">Third</a>
+
+    <div ng-view>
+    </div>
+
+    <script src="spapp.js"></script>
+
+    
+</body>
+</html>
